@@ -1,13 +1,16 @@
 # Cyber-Security-
-Self Paced Learning 
+Self-Paced Learning 
 Student Guide: Understanding CIA in Cybersecurity
 
 What is CIA?
 In cybersecurity, CIA stands for:
 
 Confidentiality: Protecting data from unauthorized access.
+
 Integrity: Ensuring data remains accurate and unaltered.
+
 Availability: Making sure data is accessible and functional when needed.
+
 Each of these principles is crucial to keeping systems and information secure. Let's break them down with easy-to-understand explanations, real-world examples, and how they apply to cloud platforms like AWS, Azure, and Splunk.
 
 1. Confidentiality: Keeping Data Safe
@@ -20,11 +23,13 @@ Imagine you have a locker at school where you store your personal belongings. On
 How Confidentiality Works on AWS, Azure, and Splunk:
 
 AWS:
-IAM (Identity and Access Management): In AWS, you can control access to resources by creating users, roles, and groups. Each user gets a set of permissions (like a key) that determines what they can and cannot access.
+IAM (Identity and Access Management): In AWS, you can control resource access by creating users, roles, and groups. Each user gets a set of permissions (like a key) that determines what they can and cannot access.
 Encryption: AWS provides encryption for data both in transit (while traveling over the network) and at rest (when stored on disk). For example, AWS S3 can automatically encrypt files when they are uploaded.
+
 Azure:
 Azure Active Directory (AAD): This is Azure's version of IAM. You control who has access to your resources using user roles and permissions, much like AWS.
 Encryption: Azure provides automatic encryption of data at rest (using Azure Storage Service Encryption) and in transit (via TLS).
+
 Splunk:
 Role-Based Access Control (RBAC): Splunk allows you to create roles with specific permissions. For example, an admin role can see everything, while a user role might only see specific dashboards.
 Encryption: Splunk supports encryption for data at rest and in transit. You can configure SSL encryption for secure communication between Splunk components (like forwarders and indexers).
@@ -66,9 +71,11 @@ How Availability Works on AWS, Azure, and Splunk:
 AWS:
 AWS EC2 Auto Scaling: If your application experiences high traffic, AWS can automatically add more servers to handle the load, ensuring your system remains available.
 S3 Redundancy: AWS S3 stores copies of your data across multiple locations to ensure that if one server goes down, the data is still available from another server.
+
 Azure:
 Azure Availability Zones: These are physically separate data centers within an Azure region. If one data center goes down, others take over, keeping your data available.
 Azure Load Balancer: Distributes traffic across multiple servers to ensure your services stay available even during high demand.
+
 Splunk:
 Splunk High Availability (HA): Splunk offers search head clustering and indexer clustering to ensure that your Splunk environment is resilient to failures.
 Distributed Deployment: With Splunk, you can set up multiple servers to ensure that data is always available, even if one server fails.
@@ -81,16 +88,26 @@ Imagine you are working for a financial company, and you use AWS for cloud stora
 
 Confidentiality:
 AWS: You use IAM to limit access to sensitive financial data, ensuring only authorized employees can view certain files.
+
 Azure: You configure Azure Active Directory to control who has access to financial reports.
+
 Splunk: You create different roles for different teams (e.g., admins and analysts) so they only see the data they need to.
+
 Integrity:
 AWS: You use AWS CloudTrail to monitor and track any changes to your critical financial data.
+
 Azure: You enable audit logs to check for any unauthorized changes to sensitive financial data.
+
 Splunk: You set up file integrity monitoring to alert you if anyone modifies the data stored on your servers.
+
 Availability:
+
 AWS: You use auto-scaling and redundancy in AWS S3 to ensure your financial data is available at all times.
+
 Azure: You configure Azure Availability Zones to ensure your services are available even if one data center fails.
+
 Splunk: You use high availability clustering to ensure your Splunk deployment is always up and running.
+
 Extra Tips for Easy Learning
 Break it Down: If something feels too complicated, break it into smaller pieces. For example, study one principle at a time—Confidentiality, Integrity, then Availability.
 Use Visuals: Draw pictures of how CIA works. For instance, draw a locker for Confidentiality, a safe for Integrity, and a restaurant for Availability.
