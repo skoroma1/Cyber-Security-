@@ -103,5 +103,3 @@ Understanding CIA—Confidentiality, Integrity, and Availability—is foundation
 In cloud platforms like AWS and Azure, and in tools like Splunk, you can apply these principles to keep your systems secure, accurate, and always available.
 
 Take it slow, visualize, and practice—it’ll become second nature!
-
-Let me know if you'd like more details or specific examples!
